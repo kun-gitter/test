@@ -1,4 +1,4 @@
-# This is a basic workflow to help you get started with Actions
+8# This is a basic workflow to help you get started with Actions
 
 name: CI
 
@@ -33,4 +33,8 @@ jobs:
       - name: Run a multi-line script
         run:
           sqlite3
+          create table test(
+          content TEXT
+          );
+          insert into test values('test')
           
